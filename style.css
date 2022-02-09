@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.container {
+    height: 820px;
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    /* main-axis cross-axis */
+    justify-content: space-between;
+    
+}
+
+.header {
+    background: red;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 5px;
+
+}
+
+.navigation {
+    background: yellow;
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    line-height: 40px;
+}
+.content {
+    background: green;
+    height: 720px;
+    display: flex;
+}
+
+.left-side {
+    background: pink;
+    flex-basis: 20%;
+display: flex;
+flex-direction: column;
+}
+
+.left-side-top {
+    background: blue;
+    color: white;
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.left-side-bottom {
+    background: rgb(53, 185, 218);
+    color: white;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.main {
+    background: orange;
+    flex:1;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+ 
+.cards {
+    display: flex;
+    background: rgb(119, 230, 137);
+    flex-basis: 30%;
+justify-content: space-around;
+
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+}
+
+.boxes {
+    background: white;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-basis: 30%;
+    justify-content: space-around;
+}
+
+.box {
+width: 22%;
+background-color: goldenrod;
+display: flex;
+
+justify-content: center;
+align-items: center;
+}
+
+.box:nth-child(3){
+ order: 1;
+}
